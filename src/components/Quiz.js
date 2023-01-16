@@ -96,8 +96,6 @@ function Quiz() {
 
     function nextQuestion(e) {
 
-        console.log('Resposta selecionada', selectedValue)
-
         let counter = 0
 
         if (selectedValue === 'true') {
