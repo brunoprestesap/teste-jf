@@ -103,13 +103,11 @@ function Quiz() {
         if (selectedValue === 'true') {
             counter = trueAnswers + 1
             setTrueAnswers(counter)
-            console.log(counter)
         }
 
         if (selectedValue === 'false') {
             counter = trueAnswers
             setTrueAnswers(counter)
-            console.log(counter)
         }
 
         const currentIndex = questions.findIndex(question => question.id === currentQuestion.id)
@@ -121,7 +119,6 @@ function Quiz() {
             SetCurrentQuestion(nextQuestion)
 
         } else {
-            console.log(counter)
             e.preventDefault();
             navigate(`/result/${counter}`)
         }
