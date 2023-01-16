@@ -15,8 +15,8 @@ function Result() {
     }
 
     return (
-        <div className='container mx-auto w-screen h-screen p-5 bg-orange-100 relative overflow-hidden'>
-            <div className='flex flex-col container mx-auto w-full h-full md:max-w-2xl bg-orange-400 text-white relative rounded-lg overflow-hidden'>
+        <div className='flex justify-center w-screen h-screen p-5 bg-orange-100 relative overflow-hidden'>
+            <div className='flex flex-col w-full h-full md:max-w-2xl bg-orange-400 text-white relative rounded-lg overflow-hidden'>
                 <div className='flex flex-col items-center m-8'>
                     <img src={Avatar} alt="Avatar Camila" className="rounded-full h-32 w-32 object-cover" />
                     <h1 className='text-2xl text-orange-100 font-bold'>Dra. Camila Neiva</h1>

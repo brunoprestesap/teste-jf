@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaArrowAltCircleRight, FaBatteryThreeQuarters } from 'react-icons/fa';
-import { useNavigate } from "react-router-dom";    
+import { useNavigate } from "react-router-dom";
 
 function Quiz() {
 
@@ -89,7 +89,7 @@ function Quiz() {
         },
     ])
 
-    
+
     const [trueAnswers, setTrueAnswers] = useState(0)
     const [selectedValue, setSelectedValue] = useState("true")
     const [currentQuestion, SetCurrentQuestion] = useState(questions[0])
@@ -114,9 +114,9 @@ function Quiz() {
 
         const currentIndex = questions.findIndex(question => question.id === currentQuestion.id)
         const nextIndex = currentIndex + 1;
-        
+
         if (nextIndex < questions.length) {
-            
+
             const nextQuestion = questions[nextIndex]
             SetCurrentQuestion(nextQuestion)
 
@@ -125,7 +125,7 @@ function Quiz() {
             e.preventDefault();
             navigate(`/result/${counter}`)
         }
-        
+
     }
 
     // function prevQuestion() {
@@ -145,8 +145,8 @@ function Quiz() {
     }
 
     return (
-        <div className='container mx-auto h-screen w-screen p-5 bg-orange-100 relative overflow-hidden'>
-            <div className='flex flex-col container mx-auto w-full h-full md:max-w-2xl bg-orange-400 text-white relative rounded-lg overflow-hidden'>
+        <div className='flex justify-center w-screen h-screen p-5 bg-orange-100 relative overflow-hidden'>
+            <div className='flex flex-col w-full h-full md:max-w-2xl bg-orange-400 text-white relative rounded-lg overflow-hidden'>
                 <div className='flex justify-between items-center m-5 text-2xl text-orange-100 leading-7 font-medium'>
                     <h1>
                         {`Pergunta ${currentQuestion.id} de ${questions.length}`}
