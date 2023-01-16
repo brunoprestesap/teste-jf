@@ -243,7 +243,7 @@ function Quiz() {
         <div className="absolute bottom-5 right-1 p-2 mt-5 flex items-center gap-2">
           <button
             onClick={(e) => prevQuestion(e)}
-            className="p-2 w-30 2xl:w-60 flex items-center text-sm md:text-xl gap-2 rounded-lg bg-orange-600 text-white hover:bg-orange-700"
+            className="p-3 w-30 2xl:w-60 flex items-center text-sm md:text-xl gap-2 rounded-lg bg-orange-600 text-white hover:bg-orange-700"
           >
             <FaArrowCircleLeft />
             Pergunta anterior
