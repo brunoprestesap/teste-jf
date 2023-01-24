@@ -35,7 +35,7 @@ function Home() {
           <h1 className="text-2xl text-orange-100 font-bold">
             Dra. Camila Neiva
           </h1>
-          <p className="text-orange-100 text-xs">CRM 1498 (depois trocar)</p>
+          <p className="text-orange-100 text-xs">CRM 1789</p>
         </div>
 
         <div className="flex flex-col items-center m-8 2xl:m-14">

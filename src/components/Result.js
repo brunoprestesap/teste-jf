@@ -26,7 +26,7 @@ function Result() {
             Dra. Camila Neiva
           </h1>
           <p className="text-orange-100 text-xs mb-8">
-            CRM 1498 (depois trocar)
+            CRM 1789
           </p>
         </div>
 
