@@ -1,7 +1,7 @@
-import Avatar from "../assets/avatar.jpg";
+import Avatar from "../assets/logoJF.jpeg";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { FaInstagram, FaRegHandPointLeft, FaUserMd, FaWhatsapp } from "react-icons/fa";
+import { FaRegHandPointLeft, FaUserMd } from "react-icons/fa";
 
 function About() {
   const navigate = useNavigate();
@@ -12,32 +12,32 @@ function About() {
   }
 
   return (
-    <div className="flex justify-center w-screen h-screen p-5 bg-orange-100 relative overflow-hidden">
-      <div className="flex flex-col w-full h-full md:max-w-2xl bg-orange-400 text-white relative rounded-lg overflow-hidden">
+    <div className="flex justify-center w-screen h-screen p-5 bg-gray-100 relative overflow-hidden">
+      <div className="flex flex-col w-full h-full md:max-w-2xl bg-gray-400 text-white relative rounded-lg overflow-hidden">
         <div className="flex flex-col items-center m-8">
           <img
             src={Avatar}
-            alt="Avatar Camila"
+            alt="Logo JF"
             className="rounded-full h-32 w-32 object-cover"
           />
-          <h1 className="text-2xl text-orange-100 font-bold">
-            Dra. Camila Neiva
+          <h1 className="text-2xl text-gray-100 font-bold">
+            Justiça Federal
           </h1>
-          <p className="text-orange-100 text-xs">CRM 1498 (depois trocar)</p>
+          <p className="text-gray-100 text-xs">Seção Judiciária do Amapá</p>
         </div>
 
         <div className="flex flex-col items-center">
           <FaUserMd className="text-4xl" />
-          <h2 className="text-2xl font-medium text-orange-100">
+          <h2 className="text-2xl font-medium text-gray-100">
             Teste de saúde mental
           </h2>
-          <h3 className="text-sm text-orange-100">
+          <h3 className="text-sm text-gray-100">
             SRQ-20 - Self Report Questionare
           </h3>
         </div>
 
         <div className="m-5">
-          <h2 className="text-xs 2xl:text-sm text-justify text-orange-100 2xl:leading-7 2xl:m-8">
+          <h2 className="text-xs 2xl:text-sm text-justify text-gray-100 2xl:leading-7 2xl:m-8">
             O SRQ-20 foi desenvolvido pela Organização Mundial de Saúde (OMS) e
             foi validado no Brasil. Tem sensibilidade de 80% e por isso é eficaz
             para detectar o sofrimento emocional.
@@ -59,16 +59,11 @@ function About() {
         <div className="flex flex-col items-center">
           <button
             onClick={(e) => handleClick(e)}
-            className="px-5 py-3 flex items-center gap-5 rounded-xl bg-orange-700 hover:bg-orange-800 text-white"
+            className="px-5 py-3 flex items-center gap-5 rounded-xl bg-gray-700 hover:bg-gray-800 text-white"
           >
             <FaRegHandPointLeft />
             Voltar
           </button>
-        </div>
-
-        <div className="flex absolute bottom-5 right-5 justify-center gap-3">
-          <FaInstagram className="text-2xl md:text-4xl" />
-          <FaWhatsapp className="text-2xl md:text-4xl" />
         </div>
       </div>
     </div>

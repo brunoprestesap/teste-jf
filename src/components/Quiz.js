@@ -194,14 +194,14 @@ function Quiz() {
   }
 
   return (
-    <div className="flex justify-center w-screen h-screen p-5 bg-orange-100 relative overflow-hidden">
-      <div className="flex flex-col w-full h-full md:max-w-2xl bg-orange-400 text-white relative rounded-lg overflow-hidden">
-        <div className="flex justify-between items-center m-5 text-2xl text-orange-100 leading-7 font-medium">
+    <div className="flex justify-center w-screen h-screen p-5 bg-white-100 relative overflow-hidden">
+      <div className="flex flex-col w-full h-full md:max-w-2xl bg-gray-400 text-white relative rounded-lg overflow-hidden">
+        <div className="flex justify-between items-center m-5 text-2xl text-gray-100 leading-7 font-medium">
           <h1>{`Pergunta ${currentQuestion.id} de ${questions.length}`}</h1>
           <FaBatteryThreeQuarters />
         </div>
         <blockquote className="m-5 text-2xl text-white leading-7 font-medium text-gray-900">
-          <h1 className="text-2xl text-orange-100 font-medium">
+          <h1 className="text-2xl text-gray-100 font-medium">
             {currentQuestion.question}
           </h1>
         </blockquote>
@@ -218,7 +218,7 @@ function Quiz() {
           />
           <label
             htmlFor="sim"
-            className="text-2xl peer-checked/sim:text-orange-200 mr-5"
+            className="text-2xl peer-checked/sim:text-gray-200 mr-5"
           >
             Sim
           </label>
@@ -234,7 +234,7 @@ function Quiz() {
           />
           <label
             htmlFor="nao"
-            className="text-2xl peer-checked/nao:text-orange-200"
+            className="text-2xl peer-checked/nao:text-gray-200"
           >
             Não
           </label>
@@ -243,7 +243,7 @@ function Quiz() {
         <div className="absolute bottom-5 right-1 p-2 mt-5 flex items-center gap-2">
           <button
             onClick={(e) => prevQuestion(e)}
-            className="p-3 w-30 2xl:w-60 flex items-center text-sm md:text-xl gap-2 rounded-lg bg-orange-600 text-white hover:bg-orange-700"
+            className="p-3 w-30 2xl:w-60 flex items-center text-sm md:text-xl gap-2 rounded-lg bg-gray-600 text-white hover:bg-gray-700"
           >
             <FaArrowCircleLeft />
             Pergunta anterior
@@ -251,7 +251,7 @@ function Quiz() {
 
           <button
             onClick={(e) => nextQuestion(e)}
-            className="p-3 w-30 2xl:w-60 flex items-center text-sm md:text-xl gap-2 rounded-lg bg-orange-600 text-white hover:bg-orange-700"
+            className="p-3 w-30 2xl:w-60 flex items-center text-sm md:text-xl gap-2 rounded-lg bg-gray-600 text-white hover:bg-gray-700"
           >
             <FaArrowAltCircleRight />
             Próxima Pergunta
